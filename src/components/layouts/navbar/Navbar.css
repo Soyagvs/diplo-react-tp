@@ -1,0 +1,41 @@
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-ol {
+    display: flex;
+    gap: 50px;
+}
+
+li {
+    list-style: none;
+    font-size: large;
+    cursor: pointer;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-div {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    color: white;
+}
