@@ -1,0 +1,63 @@
+.svg-card{
+    width: 20px;
+}
+.div-card{
+    display: flex;
+    gap: 15px;
+}
+.border-card{
+    border: 1px solid gray;
+    width:100%;
+}
+.number-card{
+    font-size: 100px;
+    color: white;
+}
+.title-card{
+    color: white;
+    margin-top: -10px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.p-card{
+    color: white;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 600px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 30px;
+    gap: 40px;
+}
+
+.card-container:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.button-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    border: 1px solid blue;
+    border-radius: 7px;
+    color: white;
+}
+
+.text{
+    margin-top: -50px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
