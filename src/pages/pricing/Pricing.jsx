@@ -1,10 +1,12 @@
-import React from 'react'
 import "./Pricing.css"
+import CardBasic from '../../components/cards-pricing/card-basic/CardBasic'
+
 const Pricing = () => {
     return (
-        <div>
-            pricing
-        </div>
+        <main>
+            Pricing
+            <CardBasic />
+        </main>
     )
 }
 
