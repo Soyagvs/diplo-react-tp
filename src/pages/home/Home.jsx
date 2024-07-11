@@ -1,5 +1,6 @@
-import BgVideo from "../../assets/video.webm"
+import BgVideo from "../../assets/video/video.webm"
 import "./Home.css"
+
 const Home = () => {
   return (
     <main>
