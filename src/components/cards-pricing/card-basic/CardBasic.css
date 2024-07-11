@@ -1,31 +1,37 @@
-.svg-card{
+.svg-card {
     width: 20px;
 }
-.div-card{
+
+.div-card {
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
-.border-card{
+
+.border-card {
     border: 1px solid gray;
-    width:100%;
+    width: 100%;
 }
-.number-card{
+
+.number-card {
     font-size: 100px;
     color: white;
 }
-.title-card{
+
+.title-card {
     color: white;
     margin-top: -10px;
     font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.p-card{
+
+.p-card {
     color: white;
+    width: 250px;
     font-size: 18px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.card-container{
+.card-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,13 +41,11 @@
     border-radius: 10px;
     padding: 30px;
     gap: 40px;
+    border: 1px solid white;
 }
 
-.card-container:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-.button-card{
+
+.button-card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,11 +56,11 @@
     color: white;
 }
 
-.text{
+.text {
     margin-top: -50px;
 }
 
-.button-container{
+.button-container {
     display: flex;
     justify-content: center;
     align-items: center;

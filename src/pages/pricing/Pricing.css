@@ -1,0 +1,14 @@
+.grid-container{
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-pricing{
+    margin-top: -50px;
+}

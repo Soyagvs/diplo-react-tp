@@ -3,14 +3,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+    background-color: black;
     padding: 10px;
 }
-.border-footer{
-    width: 1020px;
-    border: 1px solid #F6B312;
-}
 .footer-text{
-    color: black;
-    font-size: 20px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
