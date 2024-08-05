@@ -1,18 +1,14 @@
 import BgVideo from "../../assets/video/video.webm"
 import "./Home.css"
 
-const Home = () => {
+export const Home = () => {
   return (
     <main>
       <div className="home-container">
-        <h1 className="home-h1">Dale vida a tus emprendimientos desde la web</h1>
+        <h1 className="home-h1">Proyecto dedicado a UTN</h1>
         <p className="home-p">
-          Comunicate con nosotros y pon en meta tus proyectos personales o dale mas conocimiento a tu empresa familiar.
-        </p>
-        <div className="home-buttons">
-          <button>Get started</button>
-          <button className="gold">Learn more</button>
-        </div>
+          Este es el proyecto dedicado a la diplomatura de programacion web full stack con react js        </p>
+        
         <video
           className="home-video"
           src={BgVideo}
@@ -26,4 +22,3 @@ const Home = () => {
   )
 }
 
-export default Home

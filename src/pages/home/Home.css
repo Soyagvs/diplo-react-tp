@@ -21,23 +21,8 @@
     margin-top: -20px;
 }
 
-.home-buttons {
-    display: flex;
-    gap: 13px;
-}
 
-.gold {
-    width: 120px;
-    height: 40px;
-    background-color: gold;
-    border: none;
-    border-radius: 5px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
-    color: black;
-}
-
-.home-video{
+.home-video {
     margin-top: 20px;
     border-radius: 12px;
     max-width: 1000px;
