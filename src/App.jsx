@@ -9,6 +9,8 @@ import Contacts from './pages/contacts/Contacts'
 import Pricing from './pages/pricing/Pricing'
 import './index.css'
 
+
+
 function App() {
 
   return (
