@@ -1,6 +1,6 @@
 import ImageAbout from "../../assets/img/img-about.webp"
 import "./About.css"
-const About = () => {
+export const About = () => {
   return (
     <main>
       <div className="about-container">
@@ -18,6 +18,5 @@ const About = () => {
   )
 }
 
-export default About
 
 
