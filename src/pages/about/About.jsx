@@ -15,12 +15,12 @@ export const About = () => {
           <div>
             <p className="text-title">¿Que experiencias me da esta diplomatura?</p>
             <p>Trabajar con MySQL, Express, Node.js y React te proporciona una experiencia integral en el desarrollo full-stack, permitiéndote comprender y manejar tanto el frontend como el backend de una aplicación web</p>
-            
+
             <p className="text-sub">MySQL</p>
             <p><strong>Gestión de Bases de Datos Relacionales:</strong> Aprendes a diseñar, crear y gestionar bases de datos relacionales. Comprendes cómo estructurar datos utilizando tablas, relaciones y claves primarias/foráneas.</p>
             <p><strong>Consultas SQL:</strong> Te vuelves competente en escribir consultas SQL complejas para obtener, insertar, actualizar y eliminar datos.</p>
             <p><strong>Optimización de Rendimiento:</strong> Adquieres habilidades en la optimización de consultas y el diseño de índices para mejorar el rendimiento de la base de datos.</p>
-            
+
             <p className="text-sub">Express</p>
             <p><strong>Desarrollo de APIs RESTful: </strong>Aprendes a crear y manejar rutas para desarrollar APIs RESTful. Manejas solicitudes HTTP (GET, POST, PUT, DELETE) y respuestas.</p>
             <p><strong>Middleware:</strong> Comprendes el uso de middleware para gestionar la lógica de negocio, autenticar usuarios y manejar errores.</p>
