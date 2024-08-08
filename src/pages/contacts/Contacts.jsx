@@ -30,5 +30,7 @@ export const Contacts = () => {
       </div>
     </main>
   )
+
+  
 }
 
