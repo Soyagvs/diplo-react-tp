@@ -27,10 +27,11 @@ export const Contacts = () => {
             </div>
           </div>
         </div>
+      
       </div>
     </main>
   )
 
-  
+
 }
 
