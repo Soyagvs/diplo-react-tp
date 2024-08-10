@@ -63,6 +63,8 @@ input {
     font-size: 50px;
 }
 
+/*/others*/
+
 .others {
     display: flex;
     justify-content: center;
@@ -71,19 +73,19 @@ input {
     margin-top: -100px;
 }
 
-h3{
+h3 {
     font-size: 25px;
 }
 
-.text-p{
+.text-p {
     font-size: 20px;
 }
 
-.svg{
+.svg {
     width: 30px;
 }
 
-.grid-item{
+.grid-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
