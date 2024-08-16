@@ -6,7 +6,7 @@ import {Home} from './pages/home/Home'
 import {About} from './pages/about/About'
 import {Contacts} from './pages/contacts/Contacts'
 import { NotFound } from './components/NotFound'
-import {Novedades} from './pages/novedades/Novedades'
+import {Posts} from './pages/posts/Posts'
 
 import './index.css'
 
@@ -20,7 +20,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/contacts' element={<Contacts />} />
-        <Route path='/novedades' element={<Novedades />} />
+        <Route path='/posts' element={<Posts />} />
         <Route path='/*' component={<NotFound />} />
       </Routes>
       <Footer />

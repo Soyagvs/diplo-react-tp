@@ -12,23 +12,40 @@
     align-items: center;
 
 }
+/*texto*/
 .text-title{
     font-style: normal;
-    color: blue;
+    color: gainsboro;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .text-about, .text-title{
     font-size: 30px;
     width: 900px;
-    text-align: start;
+    text-align: center;
 }
 
-.text-sub{
-    color: greenyellow ;
-}
+
 /*global*/
 h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top: 40px;
     font-size: 50px;
+}
+.title-about{
+color: white;
+border-bottom: 5px solid  green;
+}
+
+/*imagen*/
+.img-about{
+    width: 500px;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 10px 10px 10px green;
+}
+
+.img-about:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
