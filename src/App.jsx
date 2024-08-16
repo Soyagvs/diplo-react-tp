@@ -5,8 +5,8 @@ import Navbar from './components/layouts/navbar/Navbar'
 import {Home} from './pages/home/Home'
 import {About} from './pages/about/About'
 import {Contacts} from './pages/contacts/Contacts'
-import { Tasks } from './pages/tasks/Tasks'
 import { NotFound } from './components/NotFound'
+import {Novedades} from './pages/novedades/Novedades'
 
 import './index.css'
 
@@ -21,7 +21,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/contacts' element={<Contacts />} />
-        <Route path='/tasks' element={<Tasks />} />
+        <Route path='/novedades' element={<Novedades />} />
         <Route path='/*' component={<NotFound />} />
       </Routes>
       <Footer />

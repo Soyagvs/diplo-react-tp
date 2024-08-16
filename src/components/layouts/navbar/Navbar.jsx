@@ -19,14 +19,11 @@ const Navbar = () => {
                 </svg>
                 <div className='nav-div'>
                     <ol className='nav-ol'>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/contacts">Contacts</Link></li>
-                        <li><Link to="/tasks">Tasks</Link></li>
+                        <li><Link to="/">Inicio</Link></li>
+                        <li><Link to="/about">Nosotros</Link></li>
+                        <li><Link to="/novedades">Novedades</Link></li>
+                        <li><Link to="/contacts">Contacto</Link></li>
                     </ol>
-                    <a className="btn-contact" href='/tasks'>
-                        Get started
-                    </a>
                 </div>
             </nav>
         </header>
