@@ -7,7 +7,7 @@ export const About = () => {
       <div className="about-container-div">
         <h2 className="title-about">Sobre mi</h2>
         <div className="text-about">
-          <img src={Aboutimg} alt="" className="img-about" />
+          <img src={Aboutimg} alt="" className="img-about" decoding="async"/>
           <p className="text-title">
             Haz escuchado alguna ves historias sobre estos hackers mas
             peligrosos del mundo? aqui te mostrare sus historias para que puedas

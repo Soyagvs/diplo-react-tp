@@ -31,3 +31,9 @@ input {
     justify-content: center;
     align-items: center;
 }
+
+/*boton enviar*/
+.btn-contact{
+  background-color: green;
+  color: black;
+}
