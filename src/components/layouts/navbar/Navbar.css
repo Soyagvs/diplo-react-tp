@@ -17,6 +17,9 @@ li {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+a:hover{
+    color: green    ;
+}
 a{
     text-decoration: none;
     color: gainsboro;

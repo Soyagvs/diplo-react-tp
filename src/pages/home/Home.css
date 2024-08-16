@@ -12,6 +12,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     max-width: 1000px;
     text-align: center;
+    border-bottom: 5px solid green;
 }
 
 .home-p {
@@ -26,4 +27,10 @@
     margin-top: 20px;
     border-radius: 12px;
     max-width: 1000px;
+    box-shadow: 10px 10px 10px green;
+}
+
+.home-video:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
