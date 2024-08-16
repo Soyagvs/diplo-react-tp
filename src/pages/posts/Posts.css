@@ -1,0 +1,13 @@
+.title-posts{
+    border-bottom: 4px solid green;
+    text-align: center;
+    width: 900px;
+    color: white;
+}
+
+.posts-contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

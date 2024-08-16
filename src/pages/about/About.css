@@ -7,7 +7,8 @@
     text-align:center;
 }
 .about-container-div{
-    display: flex-col;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
