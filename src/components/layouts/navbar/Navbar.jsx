@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 
-const Navbar = () => {
+export const Navbar = () => {
     return (
         <header>
             <nav className='nav-container'>
@@ -30,4 +30,3 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
