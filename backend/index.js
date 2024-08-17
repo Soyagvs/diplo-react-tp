@@ -55,7 +55,9 @@ app.get("/posts", async (req, res) => {
     res.json(rows);
   } catch (error) {
     console.error("Error obteniendo posts:", error.message);
-    res.status(500).json({ error: "Error al obtener posts", details: error.message });
+    res
+      .status(500)
+      .json({ error: "Error al obtener posts", details: error.message });
   }
 });
 
@@ -112,13 +114,33 @@ app.put("/posts/:id", upload.single("image"), async (req, res) => {
 app.delete("/posts/:id", async (req, res) => {
   try {
     const { id } = req.params;
-    await pool.query("DELETE FROM posts WHERE id = ?", [id]);
-    res.json({ message: "Post eliminado con éxito" });
+
+    // Asegúrate de que el ID sea un número
+    if (isNaN(id)) {
+      return res.status(400).json({ message: "ID inválido" });
+    }
+
+    // Ejecutar la consulta para eliminar el post
+    const result = await pool.query("DELETE FROM posts WHERE id = ?", [id]);
+
+    // Imprimir el resultado para verificar su estructura
+    console.log("Resultado de la consulta:", result);
+
+    // Verificar la estructura del resultado
+    if (result && result.affectedRows !== undefined) {
+      if (result.affectedRows === 0) {
+        return res.status(404).json({ message: "Post no encontrado" });
+      }
+      return res.json({ message: "Post eliminado con éxito" });
+    } else {
+      throw new Error("Estructura de resultado inesperada");
+    }
   } catch (error) {
-    console.error("Error eliminando el post:", error);
-    res.status(500).json({ error: "Error al eliminar el post" });
+    console.error("Error al eliminar el post:", error.message);
+    res.status(500).json({ message: "Error interno del servidor" });
   }
 });
+
 
 app.listen(PORT, () => {
   console.log(`Servidor activado en el puerto ${PORT}`);
