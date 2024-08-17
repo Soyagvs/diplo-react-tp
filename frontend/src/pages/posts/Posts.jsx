@@ -22,7 +22,6 @@ export const Posts = () => {
       console.error("Error fetching posts:", error);
     }
   };
-  
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -30,10 +29,11 @@ export const Posts = () => {
     const formData = new FormData();
     formData.append("title", title);
     formData.append("description", description);
-    if (image) formData.append("image", image); // Solo agregar imagen si existe
+    if (image) formData.append("image", image);
 
     try {
       if (editingPost) {
+        // Editar un post existente
         await axios.put(`http://localhost:3001/posts/${editingPost.id}`, formData, {
           headers: {
             "Content-Type": "multipart/form-data",
@@ -41,6 +41,7 @@ export const Posts = () => {
         });
         setEditingPost(null);
       } else {
+        // Crear un nuevo post
         await axios.post("http://localhost:3001/create", formData, {
           headers: {
             "Content-Type": "multipart/form-data",
@@ -50,12 +51,9 @@ export const Posts = () => {
       setTitle("");
       setDescription("");
       setImage(null);
-      fetchPosts();
+      fetchPosts(); // Actualizar la lista de posts
     } catch (error) {
-      console.error(
-        "Error creating or updating post:",
-        error.response?.data || error.message
-      );
+      console.error("Error creating or updating post:", error.response?.data || error.message);
     }
   };
 
@@ -63,15 +61,15 @@ export const Posts = () => {
     setEditingPost(post);
     setTitle(post.title);
     setDescription(post.description);
-    setImage(null);
+    setImage(null); // No es necesario resetear la imagen al editar
   };
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3001/posts/${id}`);  
-      fetchPosts();
+      await axios.delete(`http://localhost:3001/posts/${id}`);
+      fetchPosts(); // Recarga los posts después de eliminar
     } catch (error) {
-      console.error("Error deleting post:", error);
+      console.error("Error deleting post:", error.response?.data || error.message);
     }
   };
 
@@ -103,17 +101,21 @@ export const Posts = () => {
       </form>
 
       <div className="posts-list">
-      {posts
-    .filter((post) => post !== null && post !== undefined)
-    .map((post) => (
-      <div key={post.id}>
-        <h2>{post.title}</h2>
-        <p>{post.description}</p>
-        {post.image_url && <img src={post.image_url} alt={post.title} />}
-        <button onClick={() => handleEdit(post)}>Edit</button>
-        <button onClick={() => handleDelete(post.id)}>Delete</button>
-      </div>
-    ))}
+        {posts && posts.length > 0 && posts.some((post) => post) ? (
+          posts
+            .filter((post) => post && post.title) // Filtra posts válidos con un título definido
+            .map((post) => (
+              <div key={post.id}>
+                <h2>{post.title}</h2>
+                <p>{post.description}</p>
+                {post.image_url && <img src={post.image_url} alt={post.title} />}
+                <button onClick={() => handleEdit(post)}>Edit</button>
+                <button onClick={() => handleDelete(post.id)}>Delete</button>
+              </div>
+            ))
+        ) : (
+          <p className="not">No hay posts disponibles.</p>
+        )}
       </div>
     </main>
   );
