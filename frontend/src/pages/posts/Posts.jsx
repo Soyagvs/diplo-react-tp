@@ -15,7 +15,7 @@ export const Posts = () => {
 
   const fetchPosts = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/posts");
+      const response = await axios.get("https://backend-api-utn-production.up.railway.app/posts");
       const posts = Array.isArray(response.data) ? response.data : [response.data];
       setPosts(posts);
     } catch (error) {
@@ -34,7 +34,7 @@ export const Posts = () => {
     try {
       if (editingPost) {
         // Editar un post existente
-        await axios.put(`http://localhost:3001/posts/${editingPost.id}`, formData, {
+        await axios.put(`https://backend-api-utn-production.up.railway.app/posts${editingPost.id}`, formData, {
           headers: {
             "Content-Type": "multipart/form-data",
           },
@@ -42,7 +42,7 @@ export const Posts = () => {
         setEditingPost(null);
       } else {
         // Crear un nuevo post
-        await axios.post("http://localhost:3001/create", formData, {
+        await axios.post("https://backend-api-utn-production.up.railway.app/create", formData, {
           headers: {
             "Content-Type": "multipart/form-data",
           },
@@ -66,7 +66,7 @@ export const Posts = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3001/posts/${id}`);
+      await axios.delete(`https://backend-api-utn-production.up.railway.app/posts/${id}`);
       fetchPosts(); // Recarga los posts después de eliminar
     } catch (error) {
       console.error("Error deleting post:", error.response?.data || error.message);
