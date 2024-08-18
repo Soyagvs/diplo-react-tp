@@ -51,7 +51,7 @@ app.post("/create", upload.single("image"), async (req, res) => {
 // Ruta para obtener todos los posts
 app.get("/posts", async (req, res) => {
   try {
-    const [rows] = await pool.query("SELECT * FROM posts");
+    const [rows] = [await pool.query("SELECT * FROM posts")];
     res.json(rows);
   } catch (error) {
     console.error("Error obteniendo posts:", error.message);

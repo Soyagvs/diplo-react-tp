@@ -3,7 +3,7 @@
     padding: 1rem;
     max-width: 600px;
     margin: 0 auto;
-    height: auto;
+    height: max-content;
   }
   
   /* Estilo para el título de los posts */
