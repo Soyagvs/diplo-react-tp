@@ -18,11 +18,12 @@
     font-style: normal;
     color: gainsboro;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    text-align: center;
 }
 
 .text-about, .text-title{
     font-size: 30px;
-    width: 900px;
     text-align: center;
 }
 
@@ -40,8 +41,9 @@ border-bottom: 5px solid  green;
 
 /*imagen*/
 .img-about{
-    width: 500px;
-    height: 300px;
+    max-width: 500px;
+    width: 80%;
+   
     border-radius: 12px;
     box-shadow: 10px 10px 10px green;
 }

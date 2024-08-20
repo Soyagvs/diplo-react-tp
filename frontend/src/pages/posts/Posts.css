@@ -20,6 +20,7 @@
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 2rem;
+    width: 100%;
   }
   
   /* Estilo de los campos del formulario */
@@ -28,7 +29,7 @@
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 0.25rem;
-    width: 100%;
+    
   }
   
   /* Estilo del botón del formulario */

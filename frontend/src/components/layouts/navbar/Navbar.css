@@ -31,6 +31,15 @@ a {
   align-items: center;
 }
 
+@media (width <= 400px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+}
+
 button {
   width: 120px;
   height: 40px;

@@ -84,6 +84,7 @@ export const Posts = () => {
           onChange={(e) => setTitle(e.target.value)}
           required
         />
+        
         <textarea
           placeholder="Description"
           value={description}

@@ -16,11 +16,13 @@ input {
   height: 40px;
   border-radius: 10px;
   border: 1px solid #373739;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-p {
     font-size: 30px;
-    width: 900px;
+    max-width: 900px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
