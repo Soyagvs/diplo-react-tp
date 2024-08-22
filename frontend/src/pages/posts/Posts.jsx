@@ -115,7 +115,9 @@ export const Posts = () => {
               </div>
             ))
         ) : (
-          <p className="not"> No hay posts disponibles.</p>
+          <p className="not"> 
+          No hay posts disponibles.
+          </p>
         )}
       </div>
     </main>
