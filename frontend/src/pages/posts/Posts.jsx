@@ -84,7 +84,7 @@ export const Posts = () => {
           onChange={(e) => setTitle(e.target.value)}
           required
         />
-        
+
         <textarea
           placeholder="Description"
           value={description}
@@ -115,8 +115,8 @@ export const Posts = () => {
               </div>
             ))
         ) : (
-          <p className="not"> 
-          No hay posts disponibles.
+          <p className="not">
+            No hay posts disponibles.
           </p>
         )}
       </div>
