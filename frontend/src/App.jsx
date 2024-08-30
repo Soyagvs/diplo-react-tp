@@ -9,6 +9,7 @@ import { Posts } from "./pages/posts/Posts";
 
 import "./index.css";
 
+
 function App() {
   return (
     <BrowserRouter>
