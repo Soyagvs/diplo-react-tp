@@ -6,6 +6,7 @@ import { About } from "./pages/about/About";
 import { Contacts } from "./pages/contacts/Contacts";
 import { Posts } from "./pages/posts/Posts";
 
+
 import "./index.css";
 
 function App() {
